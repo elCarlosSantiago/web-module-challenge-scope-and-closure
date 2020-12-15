@@ -42,7 +42,7 @@ Find the file `index.js` and complete the tasks.
 
 Edit the `ReadMe` file with your answers.
 
-1. In your own words, define closure (1-2 sentences).
+1. In your own words, define closure (1-2 sentences). A closure refers to the ability of a function to access its parent's scope, even after the parent function has closed. This allows for a function to have 'private' variables.
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -63,9 +63,9 @@ dansRoll();
 dansRoll();
 ```
 
-a. Where is closure used in this code? How can you tell?
-b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
-c. What is the lexical scope of `newRoll`? 
+a. Where is closure used in this code? How can you tell? There are nested functions in the code. When the inner anonymous function references the name param.
+b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change? The name param will always be "Dan". The roll will change with each function call. 
+c. What is the lexical scope of `newRoll`? It is in the anonymous function which is the child of the personalDice function.
 
 
 ### Task 3 - Stretch Goals
